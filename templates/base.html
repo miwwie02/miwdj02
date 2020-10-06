@@ -1,0 +1,85 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './css/base.css' %}">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar_left">
+            <a href="#navbar">Miwwie</a>
+        </div>
+        <div class="navbar_right">
+            <a href="#profile">Profile</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <a href="#navbar">61011382</a>
+        </div>
+    </nav>
+
+    <div class="body_container" id="profile">
+        <div class="body_left">
+            <h4>Hello</h4>
+            <div class="left_effect" title="My name's ''miwwie'' ">My name's ''Miwwie''</div>
+            <h5>Information Engineering</h5>
+        </div>
+        <div class="body_right">
+            <img src="{%static './images/profile.jpg'%}" alt="profile">
+            <h2>ณัฐวรรธน์ ทองหาญ 61011382 </h2>
+        </div>
+    </div>
+
+    <div class="edu_container" id="education">
+        <h1>Education</h1>
+        <div class="edu_box">
+            <div class="edu_left">
+                <img src="{%static './images/preeyachot.jpg'%}" alt="preeyachot">
+            </div>
+            <div class="edu_right">
+                <h1>Preeyachot school</h1>
+                <h3>โรงเรียนปรียาโชติ</h3>
+                <h3>78 ถ.ประชาอุทิศ อ.ตาคลี จ.นครสวรรค์</h3> 
+            </div>
+        </div>
+        <div class="edu_box_2">
+            <div class="edu_left" >
+                <img src="{%static './images/TP.png'%}" alt="TP">
+            </div>
+            <div class="edu_right">
+                <h1>Takhli Prachasan school</h1>
+                <h3>โรงเรียนตาคลีประชาสรรค์</h3>
+                <h3>110 ถ. พหลโยธิน อ.ตาคลี จ.นครสวรรค์</h3> 
+            </div>
+        </div>
+        <div class="edu_box_3">
+            <div class="edu_left">
+                <img src="{%static './images/Logo_kmitl.png'%}" alt="KMITL">
+            </div>
+            <div class="edu_right">
+                <h1>King Mongkut's Institute of Technology Ladkrabang</h1>
+                <h3>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</h3>
+                <h3>1 ซอย ฉลองกรุง 1 แขวง ลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</h3> 
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_container" id="contact">
+        <div class="contact">
+            <a href="https://www.facebook.com/nattawat.thongharn" target="_blank"><img src="{%static './images/facebook.png'%}" alt="facebook"></a>
+            <a href="https://line.me/ti/p/MINkw9kVM9" target="_blank"><img src="{%static './images/line.png'%}" alt="line"></a>
+            <a href="https://github.com/miwwie02" target="_blank"><img src="{%static './images/github.png'%}" alt="github"></a>
+            <a href="https://www.instagram.com/miwwie_02/?hl=th" target="_blank"><img src="{%static './images/instagram.png'%}" alt="instagram"></a>
+            <a href="https://twitter.com/MiEwiW" target="_blank"><img src="{%static './images/twitter.png'%}" alt="twitter"></a>
+            
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+    
+
+</body>
+</html>
